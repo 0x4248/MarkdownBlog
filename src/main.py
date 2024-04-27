@@ -8,7 +8,6 @@
 # src/main.py
 # This is the main file for MarkdownBlog and is called by `make` to generate the blog
 
-import markdown
 import os
 import json
 
