@@ -41,7 +41,12 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -57,7 +62,8 @@ a:hover {
     text-decoration: underline;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 0;
     padding: 0;
 }
@@ -107,7 +113,7 @@ code {
     background: var(--bg-secondary);
 }
 
-.main{
+.main {
     margin: auto;
     max-width: 1000px;
     padding: 20px;
@@ -149,7 +155,7 @@ code {
 }
 
 
-@media screen and (prefers-color-scheme: dark){
+@media screen and (prefers-color-scheme: dark) {
     :root {
         --text-primary: #fff;
         --code-text: #fff;
@@ -165,8 +171,8 @@ code {
 }
 
 
-@media screen and (max-width: 1200px){
-    .main{
+@media screen and (max-width: 1200px) {
+    .main {
         max-width: 90%;
     }
 }
