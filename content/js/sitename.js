@@ -14,7 +14,8 @@ function setSiteName() {
     .then(response => response.json())
     .then(data => {
         document.getElementById('sitename').innerHTML = data.sitename;
-    });
+    })
+    .catch(error => console.error("Your sitename is not set in the config file."))
 }
 
 setSiteName();
