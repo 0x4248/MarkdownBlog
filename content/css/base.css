@@ -19,13 +19,13 @@
 :root {
     --text-primary: #222;
     --code-text: #000000;
-    --code-bg: #ddd;
+    --code-bg: #eee;
     --pre-bg: #f7f7f7;
     --bg-primary: #eee;
     --bg-secondary: #fff;
     --link: #007bff;
     --link-hover: #0056b3;
-    --footer-bg: #ccc;
+    --footer-bg: #fff;
     --nav-bg: #e9e9e95b;
 }
 
@@ -144,6 +144,12 @@ code {
 .sitename {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+.date {
+    font-size: 1em;
+    color: #777;
+    margin: 2px 0;
 }
 
 .footer {

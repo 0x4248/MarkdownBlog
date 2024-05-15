@@ -32,7 +32,7 @@ def load_page_content(page_path):
         return None, None
 
 def generate_html(meta, formatted_page_content, base_template):
-    base = base_template.replace('<div class="main" id="main">', "<div class='main' id='main'>\n" + formatted_page_content)
+    base = base_template.replace('<div class="main" id="main">', "<div class='main' id='main'>\n<p class='date'>"+meta["Date"]+"</p>"+formatted_page_content)
     base = base.replace("<title></title>", f"<title>{meta['Title']}</title>")
     base = base.replace('<meta name="description" content="">', f'<meta name="description" content="{meta["Description"]}">')
     base = base.replace('<meta name="keywords" content="">', f'<meta name="keywords" content="{meta["Keywords"]}">')
@@ -40,6 +40,7 @@ def generate_html(meta, formatted_page_content, base_template):
     base = base.replace('<meta name="og:image" content="">', f'<meta name="og:image" content="{meta["Image"]}">')
     base = base.replace('<meta name="og:title" content="">', f'<meta name="og:title" content="{meta["Title"]}">')
     base = base.replace('<meta name="og:description" content="">', f'<meta name="og:description" content="{meta["Description"]}">')
+    base = base.replace('<meta name="og:created_time" content="">', f'<meta name="og:created_time" content="{meta["Date"]}">')
     return base
 
 def main():
