@@ -17,7 +17,7 @@ def warning(str):
     print("[ " + colour.YELLOW + "WARN" + colour.RESET + " ] " + str)
 
 def error(str):
-    print("[ " + colour.RED + "ERR" + colour.RESET + "  ] " + str)
+    print("[  " + colour.RED + "ERR" + colour.RESET + "  ] " + str)
 
 def success(str):
     print("[  " + colour.GREEN + "OK" + colour.RESET + "   ] " + str)
